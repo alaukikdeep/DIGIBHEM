@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Hotel Booking Registration Form</title> 
+<link type="text/css" rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <div class="container mt-4">
+    <form id="bookingForm">
+        <div class="header-image text-center mb-3">
+            <img src="hotel_booking.jpg" class="img-fluid rounded" alt="Hotel Booking">
+        </div>
+  <div class="form-header">
+ <h2>Book Your Hotel</h2>
+  </div>
+        <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" class="form-control" id="Name" placeholder="Enter your name" required>
+        </div>
+<div class="form-group">
+            <label for="MobileNumber">Mobile Number:</label>
+            <input type="text" class="form-control" id="MobileNumber" placeholder="Enter your mobile number" required>
+        </div>
+        <div class="form-group">
+            <label for="checkInDate">Check-in Date:</label>
+            <input type="date" class="form-control" id="checkInDate" required>
+        </div>
+        <div class="form-group">
+            <label for="totalDays">Total No of Days:</label>
+            <input type="number" class="form-control" id="totalDays" placeholder="Enter total number of days" required>
+        </div>
+        <div class="form-group">
+            <label for="totalPersons">Total No of Persons:</label>
+            <input type="number" class="form-control" id="totalPersons" placeholder="Enter total number of persons" required>
+        </div>
+        <div class="form-group">
+            <label for="roomType">Room Type:</label>
+            <select class="form-control" id="roomType">
+                <option value="Delux">Delux Room</option>
+                <option value="Suite">Suite Room</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="amenities">Amenities:</label>
+            <select class="form-control" id="amenities" multiple>
+                <option value="AC">AC</option>
+                <option value="Locker">Locker</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="advanceAmount">Advance Amount:</label>
+            <input type="number" class="form-control" id="advanceAmount" placeholder="Enter advance amount" required>
+        </div>
+        <button type="calculate" class="btn btn-primary">Calculate total cost</button>
+        <p>Room Cost: <span id="totalRoomCost">0</span></p>
+        <p>Amenities Cost: <span id="totalAmenitiesCost">0</span></p>
+        <p>Total Cost: <span id="totalCost">0</span></p>
+        <p>Due Balance: <span id="dueBalance">0</span></p>
+
+        <h2 class="mt-4">Additional Charges</h2>
+        <p>Upto 2 People: No Change in Cost</p>
+        <p>Per Day Cost for Extra Person: 1000/-</p>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    <p id="confirmation" class="mt-4">Booking confirmed!</p>
+</div>
+
+<!-- Add Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
