@@ -32,6 +32,9 @@ p {
 
 #confirmation {
   text-align: center;
+  background-color: lightgreen;
   color: green;
   display: none;
+  border-radius: 5px;
+  width: 100%;
 }
